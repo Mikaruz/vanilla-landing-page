@@ -1,4 +1,4 @@
-nav {
+.navbar {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -10,16 +10,16 @@ nav {
   padding: 0 5%;
 }
 
-nav .menu {
+.navbar .menu {
   display: none;
 }
 
-nav .nav-links {
+.navbar .nav-links {
   display: flex;
   align-items: center;
 }
 
-nav ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -29,13 +29,13 @@ nav ul {
   margin-right: 30px;
 }
 
-nav ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
-nav .profile {
+.navbar .profile {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -43,12 +43,12 @@ nav .profile {
 }
 
 @media (max-width: 768px) {
-  nav .nav-links ul,
-  nav h1 {
+  .navbar .nav-links ul,
+  .navbar h1 {
     display: none;
   }
 
-  nav .menu {
+  .navbar .menu {
     display: block;
     width: 50px;
     height: 50px;
