@@ -1,13 +1,20 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -300px; /* Cambia 'right' por 'left' */
+  left: -300px;
   width: 200px;
   height: 100%;
-  background: #444;
+  background: #1a1a35;
   color: white;
-  padding: 1rem;
-  transition: left 0.3s ease; /* Ahora se anima el 'left' */
+  padding: 2rem 1rem;
+  transition: left 0.3s ease;
+}
+
+.sidebar h2 {
+  font-family: "Montserrat", serif;
+  font-size: x-large;
+  margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .sidebar ul {
@@ -15,18 +22,13 @@
 }
 
 .sidebar ul li {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .sidebar a {
   color: white;
+  font-weight: 500;
+  font-size: large;
   text-decoration: none;
-}
-
-.sidebar .close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
+  font-family: "Montserrat", serif;
 }

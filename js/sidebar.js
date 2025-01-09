@@ -4,11 +4,8 @@ function toggleSidebar() {
 
   sidebar.style.left = isVisible ? "-300px" : "0px";
 
-  if (!isVisible) {
+  if (!isVisible)
     document.addEventListener("click", closeSidebarOnClickOutside);
-  } else {
-    document.removeEventListener("click", closeSidebarOnClickOutside);
-  }
 }
 
 function closeSidebarOnClickOutside(event) {
