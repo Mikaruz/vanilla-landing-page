@@ -1,27 +1,32 @@
-.sidebar-hidden {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-
-.sidebar-visible {
-  display: block;
-  height: 100%;
-  width: 250px;
+.sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: red;
-  overflow-x: hidden;
-  transform: translateX(0); /* Visible inicialmente */
-  transition: transform 0.3s ease; /* Transición suave del movimiento */
-  padding-top: 20px;
+  left: -300px; /* Cambia 'right' por 'left' */
+  width: 200px;
+  height: 100%;
+  background: #444;
+  color: white;
+  padding: 1rem;
+  transition: left 0.3s ease; /* Ahora se anima el 'left' */
 }
 
-.sidebar-visible a {
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 25px;
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
   color: white;
-  display: block;
-  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sidebar .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }

@@ -15,31 +15,37 @@
     />
   </head>
   <body>
-    <nav>
-      <!-- Navbar -->
-      <div class="navbar">
-        <img id="toggle-btn" class="menu" src="assets/menu.svg" alt="Menu" />
-        <h1 class="title">EnvíaYa</h1>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#tracking">Tracking</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <img class="profile" src="assets/profile.jpg" alt="Perfil" />
-        </div>
-      </div>
-      <!-- Sidebar -->
-      <div id="sidebar-hidden" class="sidebar-hidden">
-        <li><a href="#about">About us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#tracking">Tracking</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img
+        id="toggle-btn"
+        onClick="toggleSidebar()"
+        class="menu"
+        src="assets/menu.svg"
+        alt="Menu"
+      />
+      <h1 class="title">EnvíaYa</h1>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#tracking">Tracking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img class="profile" src="assets/profile.jpg" alt="Perfil" />
       </div>
     </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </aside>
 
     <main>
       <!--  <img src="assets/picture.svg" alt="" /> -->

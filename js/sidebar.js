@@ -1,26 +1,30 @@
-const sidebar = document.getElementById("sidebar-hidden");
-const toggleBtn = document.getElementById("toggle-btn");
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const isVisible = sidebar.style.left === "0px";
 
-toggleBtn.addEventListener("click", () => {
-  sidebar.classList = "sidebar-visible";
-});
+  sidebar.style.left = isVisible ? "-300px" : "0px";
 
-document.addEventListener("click", (e) => {
-  if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
-    sidebar.classList = "sidebar-hidden";
-  }
-});
-
-function updateSidebarClass() {
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-  if (isMobile) {
-    sidebar.classList = "sidebar-visible";
+  if (!isVisible) {
+    document.addEventListener("click", closeSidebarOnClickOutside);
   } else {
-    sidebar.classList = "sidebar-hidden";
+    document.removeEventListener("click", closeSidebarOnClickOutside);
   }
 }
 
-updateSidebarClass();
+function closeSidebarOnClickOutside(event) {
+  const sidebar = document.getElementById("sidebar");
+  const menuBtn = document.querySelector(".menu");
 
-window.addEventListener("resize", updateSidebarClass);
+  if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+    sidebar.style.left = "-300px";
+    document.removeEventListener("click", closeSidebarOnClickOutside);
+  }
+}
+
+function handleResize() {
+  const sidebar = document.getElementById("sidebar");
+
+  if (window.innerWidth > 768) sidebar.style.left = "-300px";
+}
+
+window.addEventListener("resize", handleResize);

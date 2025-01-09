@@ -1,14 +1,10 @@
-# Portfolio Landing Page
+# Landing Page
 
-Welcome to my portfolio landing page! This project serves as a showcase of my skills, projects, and experiences. It’s designed to provide visitors with a quick overview of who I am and what I do.
+Welcome to my landing page! This project serves as a showcase of my skills, projects, and experiences. It’s designed to provide visitors with a quick overview of who I am and what I do.
 
 ## Features
 
 - **Responsive Design:** Ensures the page looks great on any device, whether desktop, tablet, or mobile.
-- **Projects Section:** Highlights some of my best work with descriptions, links, and images.
-- **About Me:** A brief introduction to my background, skills, and professional goals.
-- **Contact Form:** An easy way for visitors to get in touch with me.
-- **Social Media Links:** Quick access to my professional profiles on platforms like LinkedIn, GitHub, and others.
 
 ## Technologies Used
 
