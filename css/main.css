@@ -1,0 +1,11 @@
+main {
+  background-color: blue;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  height: 50%; /* Ajusta la altura al 50% del contenedor padre */
+  width: auto; /* Mantiene la proporción original del SVG */
+}

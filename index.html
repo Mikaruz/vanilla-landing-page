@@ -9,48 +9,52 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <img
-        id="toggle-btn"
-        onClick="toggleSidebar()"
-        class="menu"
-        src="assets/menu.svg"
-        alt="Menu"
-      />
-      <h1 class="title">EnvíaYa</h1>
-      <div class="nav-links">
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <img
+          id="toggle-btn"
+          onClick="toggleSidebar()"
+          class="menu"
+          src="assets/menu.svg"
+          alt="Menu"
+        />
+        <h1 class="title">EnvíaYa</h1>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#tracking">Tracking</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <img class="profile" src="assets/profile.jpg" alt="Perfil" />
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <h2 class="title">EnvíaYa</h2>
         <ul>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#tracking">Tracking</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
-        <img class="profile" src="assets/profile.jpg" alt="Perfil" />
-      </div>
-    </nav>
+      </aside>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <h2 class="title">EnvíaYa</h2>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </aside>
-
-    <main>
-      <img src="assets/picture.svg" alt="" />
-    </main>
+      <!-- Main content -->
+      <main>
+        <img class="main-image" src="assets/picture.svg" alt="main-image" />
+      </main>
+    </div>
     <script src="js/sidebar.js"></script>
   </body>
 </html>
