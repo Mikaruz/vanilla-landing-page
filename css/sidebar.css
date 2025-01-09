@@ -1,0 +1,27 @@
+.sidebar-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-visible {
+  display: block;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transform: translateX(0); /* Visible inicialmente */
+  transition: transform 0.3s ease; /* Transición suave del movimiento */
+  padding-top: 20px;
+}
+
+.sidebar-visible a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
