@@ -3,9 +3,57 @@ main {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+}
+
+.subtitle {
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  width: 300px;
+  word-wrap: break-word;
+  background-color: white;
+  white-space: normal;
+}
+
+.description {
+  font-family: "Montserrat", serif;
+  width: 300px;
+  word-wrap: break-word;
+  background-color: white;
+  white-space: normal;
 }
 
 .main-image {
-  height: 50%; /* Ajusta la altura al 50% del contenedor padre */
+  height: 80%; /* Ajusta la altura al 50% del contenedor padre */
   width: auto; /* Mantiene la proporción original del SVG */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-image {
+    height: 50%;
+    width: auto;
+  }
+
+  .about-us {
+    display: none;
+  }
 }
