@@ -4,6 +4,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 90px;
 }
 
 .main-content {
@@ -11,6 +12,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  gap: 100px;
 }
 
 .brands {
@@ -20,6 +23,7 @@ main {
 
 .subtitle {
   font-family: "Montserrat", serif;
+  margin-bottom: 30px;
   font-weight: bold;
   width: 300px;
   word-wrap: break-word;
@@ -33,11 +37,19 @@ main {
   word-wrap: break-word;
   background-color: white;
   white-space: normal;
+  color: gray;
 }
 
 .main-image {
-  height: 80%; /* Ajusta la altura al 50% del contenedor padre */
-  width: auto; /* Mantiene la proporción original del SVG */
+  height: 450px;
+  width: auto;
+}
+
+.button-action img {
+  width: 50px;
+  height: auto;
+  filter: invert(77%) sepia(70%) saturate(4624%) hue-rotate(352deg)
+    brightness(104%) contrast(101%);
 }
 
 .brands-information h3 {
@@ -64,13 +76,56 @@ main {
 .brands-images img {
   height: 25px;
   width: auto;
+  filter: grayscale(100%);
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.benefits-text {
+  font-family: "Montserrat", serif;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.benefits-image-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff920f;
+  width: 60px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.benefits-image-container img {
+  width: 40%;
+  height: auto;
+  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-bottom: 0px;
+  }
+
   .main-content {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    gap: 0px;
   }
 
   .main-image {
@@ -78,7 +133,9 @@ main {
     width: auto;
   }
 
-  .about-us {
+  .about-us,
+  .benefits,
+  .brands {
     display: none;
   }
 }
