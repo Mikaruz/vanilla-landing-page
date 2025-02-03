@@ -13,7 +13,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  gap: 100px;
+  gap: 10px;
 }
 
 .brands {
@@ -43,18 +43,55 @@ main {
 .main-image {
   height: 450px;
   width: auto;
+  margin-right: 80px;
+  margin-left: 20px;
+}
+
+.button-action {
+  margin-top: 20px;
+}
+
+.button-action {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-action .conteinter-text-button {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.button-action .text-button {
+  position: relative;
+  bottom: 40px;
+  left: 15px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+}
+
+.button-action .circle {
+  background-color: #ff920f;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .button-action img {
-  width: 50px;
+  width: 70px;
   height: auto;
   filter: invert(77%) sepia(70%) saturate(4624%) hue-rotate(352deg)
     brightness(104%) contrast(101%);
+  transform: rotate(90deg);
+}
+
+.brands-information {
+  margin-right: 100px;
 }
 
 .brands-information h3 {
   font-family: "Montserrat", serif;
   font-weight: semibold;
+  margin-bottom: 10px;
 }
 
 .brands-information p {
@@ -116,7 +153,7 @@ main {
   filter: brightness(0) invert(1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   main {
     padding-bottom: 0px;
   }
@@ -135,6 +172,7 @@ main {
 
   .about-us,
   .benefits,
+  .button-action,
   .brands {
     display: none;
   }

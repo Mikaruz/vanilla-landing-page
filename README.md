@@ -1,44 +1,48 @@
-# Landing Page
+# Landing Page 1
 
-Welcome to my landing page! This project serves as a showcase of my skills, projects, and experiences. It’s designed to provide visitors with a quick overview of who I am and what I do.
+This project is a Landing Page developed with **HTML, CSS, and JavaScript**, inspired by the design on [Dribbble](https://dribbble.com/shots/24339040-Skateboard-landing-page-ui). It is a modern and attractive interface to showcase projects in a personal portfolio.
 
-## Features
+## 🚀 Technologies Used
 
-- **Responsive Design:** Ensures the page looks great on any device, whether desktop, tablet, or mobile.
+- **HTML5** → Semantic and accessible structure.
+- **CSS3** → Responsive design, animations, and advanced styling.
+- **JavaScript (ES6+)** → Dynamic interactivity on the page.
 
-## Technologies Used
+## 📸 Screenshots
 
-- **HTML5** and **CSS3** for structure and styling.
-- **JavaScript** for interactivity and dynamic content.
-- **Frameworks/Libraries (if applicable):** Mention any frameworks like React, Bootstrap, or others used in your project.
-- **Tools:** List any tools like Figma, Photoshop, or others you used during development.
+Here is a preview of the landing page:
 
-## Installation and Usage
+![Landing Page Preview](assets/screenshot.jpg)
 
-To run this project locally:
+## 📂 Project Structure
 
-1. Clone the repository:
+```bash
+📁 vanilla-landing-page
+├── 📂 assets  # Images, icons, and other resources
+├── 📂 css     # CSS stylesheets
+├── 📂 js      # Interactivity scripts
+├── 📄 index.html  # Main page
+└── 📄 README.md   # Documentation
+```
+
+## ⚙️ Installation and Usage
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/your-username/your-repository.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd your-repo
-   ```
-3. Open `index.html` in your browser to view the landing page.
+2. **Open the `index.html` file in your browser**
+3. Explore and customize as needed!
 
-## Screenshots
+## 📌 Credits
 
-Include one or two screenshots of your portfolio page here to give a preview of the design and content.
+- Design inspired by: [Dribbble](https://dribbble.com/shots/24339040-Skateboard-landing-page-ui)
+- Developed by: **Mikaruz**
 
-## Contact
+## 📄 License
 
-Feel free to reach out if you have any questions or want to collaborate!
-
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **GitHub:** [Your GitHub Profile](https://github.com/yourusername)
+This project is under the MIT license. You can freely use and modify it.
 
 ---
 
-Thank you for visiting my portfolio! I hope you find it informative and engaging.
+💡 _If you like this project, don't forget to give it a ⭐ on GitHub!_
