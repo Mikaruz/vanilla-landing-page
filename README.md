@@ -1,4 +1,4 @@
-# Landing Page 1
+# Vanilla Landing Page
 
 This project is a Landing Page developed with **HTML, CSS, and JavaScript**, inspired by the design on [Dribbble](https://dribbble.com/shots/24339040-Skateboard-landing-page-ui). It is a modern and attractive interface to showcase projects in a personal portfolio.
 
@@ -8,9 +8,7 @@ This project is a Landing Page developed with **HTML, CSS, and JavaScript**, ins
 - **CSS3** → Responsive design, animations, and advanced styling.
 - **JavaScript (ES6+)** → Dynamic interactivity on the page.
 
-## 📸 Screenshots
-
-Here is a preview of the landing page:
+## 📸 Preview
 
 ![Landing Page Preview](assets/screenshot.jpg)
 

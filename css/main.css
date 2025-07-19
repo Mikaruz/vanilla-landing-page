@@ -8,6 +8,7 @@ main {
 }
 
 .main-content {
+  height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,6 +26,7 @@ main {
   font-family: "Montserrat", serif;
   margin-bottom: 30px;
   font-weight: bold;
+  font-size: 1.5rem;
   width: 300px;
   word-wrap: break-word;
   background-color: white;
@@ -33,6 +35,7 @@ main {
 
 .description {
   font-family: "Montserrat", serif;
+  font-size: 1.125rem;
   width: 300px;
   word-wrap: break-word;
   background-color: white;
@@ -41,7 +44,7 @@ main {
 }
 
 .main-image {
-  height: 450px;
+  height: 28rem;
   width: auto;
   margin-right: 80px;
   margin-left: 20px;
@@ -153,7 +156,22 @@ main {
   filter: brightness(0) invert(1);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1370px) {
+  .main-image {
+    height: 300px;
+    width: auto;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1070px) {
   main {
     padding-bottom: 0px;
   }
@@ -166,7 +184,7 @@ main {
   }
 
   .main-image {
-    height: 50%;
+    height: 75%;
     width: auto;
   }
 
